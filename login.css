@@ -1,0 +1,140 @@
+*{
+        box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding:0;
+    min-height: 100%;
+    font-weight: 400;
+    font-family:  'Montserrat', sans-serif;
+}
+.login-body{
+    border: 1px solid rgb(214, 214, 214);
+    width: 28em;
+    height: 30em;
+    margin: auto;
+    border-radius:12px;
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+.login-body>div{
+   padding: 2em 3em;
+}
+.login-body-head{
+    margin: auto;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.login-body-head-logo{
+    width:2em;
+    
+}
+
+.login-mail{
+    width:100%;
+    height:4em;
+    margin-bottom: 1.2em;
+    text-indent: 1em;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.login-mail:focus{
+    border: 3px solid rgb(1, 1, 182);
+    outline: rgb(218, 232, 250) solid 6px;
+}
+
+.login-button{
+    width:100%;
+    height: 3em;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    background-color: #071888;
+    margin-bottom: 1.2em;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.login-button:hover{
+background-color: #142CBE;
+}
+.login-line{
+    display: flex;
+    margin-bottom: 1.2em;
+}
+
+.signup{
+    width:100%;
+    height: 3em;
+    border-radius: 30px;
+    border: 1px solid #071888;
+    color: #071888;
+    background-color: white;
+    margin-bottom: 2.2em;
+    font-size: 1rem;
+    font-weight: bold;
+    
+}
+
+.signup:hover{
+    border: 2px solid #071888;
+}
+
+.signup > a{
+    text-decoration: none;
+}
+
+.login-flag{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 1.5em;
+    height: 1.2em;
+
+}
+
+.login-footer-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:  'Montserrat', sans-serif;
+    font-size: small;
+    
+}
+.login-footer{
+    background-color: #f7f9fa;
+    width: 100%;
+    
+    
+}
+
+.login-footer-div{
+    padding: 0.2em 5em;
+}
+.login-footer-list>li{
+    list-style-type: none;
+    margin-right: 1em;
+    
+}
+.login-footer-list li a{
+    text-decoration: none;
+    font-size: 0.8em;
+    color: grey;
+}
+
+.login-footer-list li a:hover{
+    text-decoration: underline;
+}
+ @media (max-width:599px) {
+    .login-body{
+        width: 100%;
+    }
+    .login-footer-list{
+        font-family:  'Montserrat', sans-serif;
+        font-size: small;
+        white-space: nowrap;
+    }
+}

@@ -1,0 +1,632 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 0.8rem; 
+    height: 100%;
+}
+
+/* Styling for sidebar, you need to resixe your screen to a smaller one to see the effect */
+.sidebar{
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgb(5, 46, 104);
+    height: 100%;
+    width:0;
+    color: white;
+    line-height: 2em;
+    transition: all 0.5s ease;
+    border-right: 1px solid white;
+    
+}
+
+.sidebar-content{
+    padding: 2em;
+    white-space: nowrap;
+    
+}
+
+.sidebar-content >p{
+    border-bottom: 1px solid #f0f2f7;
+}
+ .sidebar.active{ 
+    transition: all 0.5s ease;
+    width:35%;
+    z-index: 99;
+} 
+
+.sidebar.active ~ .main-body{
+    width: 65%;
+    transition: all 0.5s ease;    
+}
+
+.sidebar-content > a {
+    border: 1px solid white;
+    background-color: rgb(5, 46, 104);
+}
+
+.personal-content p a{
+    text-decoration: none;
+    color:white;
+}
+
+.main-body{
+    position: absolute;
+    height: 100%;
+    width:100%;
+    right:0;
+}
+
+.side-signup{
+    margin-top: 100%;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding-left: 1.8em ;
+    width:7em;
+    height: 2em;
+    cursor: pointer;
+}
+.side-signup:hover{
+    background-color:  #0347c7;
+}
+
+#menu{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0.75em 1.2em;
+    font-weight: bold;
+    
+}
+.icon{
+    height: 1.4em;
+    color: #f0f2f7;
+    margin-right: 0.4em;
+}
+
+.icon.active{
+    display: none;
+}
+.icon1{
+    display: none;
+    height: 1.2em;
+    color: #f0f2f7;
+    margin-right: 0.4em;
+}
+.icon1.active{
+    display: block;
+}
+
+.icon2, .icon3{
+   margin-left: 4%;
+    width: 1em;
+    height: 1em;
+}
+
+.icon2.active{
+    display: block;
+}
+
+.icon2{
+    display: none;
+}
+
+.icon3.active{
+    display: none;
+}
+
+/* Styling for small screen navbar */
+.clone-nav-1{
+  
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+    margin: 1.75em;
+}
+    
+.paypal-logo {
+    height: 3em;
+}
+.clone--nav{
+    display: flex;
+    align-items: center;
+    margin: 1.75em;
+    padding: 10px;  
+}
+.clone--nav > h4{
+    margin: auto;
+}
+.nav--img{
+    margin-left: 10%;
+}
+.nav--log{
+    margin-right: 5%;
+}
+.signup{
+    border:1px solid #0070BA;
+    padding: 0.625em 1.125em 0.625em 1.125em;
+    border-radius: 20px;
+    color: white;
+    background-color: #0070BA;
+    text-decoration: none;
+    cursor: pointer;
+ 
+}
+
+.signup:hover{
+    background-color: #0347c7;
+}
+.login{
+    border:1px solid #0070BA;
+    font-weight: bold;
+    padding: 0.7em 1.4em 0.7em 1.4em;
+    border-radius: 20px;
+    text-decoration: none;
+    margin-right: 10px ;
+    color: #0070BA;
+    font-size: 100%;
+    
+}
+#personal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 10000;
+}
+.header-1{
+    position: relative;
+}
+.header--background{
+    background-image: url(/clone-images/homepage-hero-1x.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 32em;
+    background-position:center center;
+    color: white;
+    width: 100%;
+}
+
+.header--background > div{
+    
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.nav-toggle{
+    top:0;
+    display: none;
+    width: 100%;
+    height: 8em;
+    background-color: rgb(5, 46, 104);
+    height: 100%;
+    border-bottom: 1px solid white;
+    box-sizing: border-box;
+    
+}
+.nav-toggle-items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 3.2em 3.2em;
+    grid-column-gap: 3em;
+    grid-row-gap: 1em;
+    margin: auto;
+    padding: 2em;
+    height: 100%;
+    margin-left:15em;
+    cursor: pointer;
+
+    
+
+}
+
+#nav-toggle-grid{
+    margin-bottom: 3em;
+}
+
+.item:hover{
+    text-decoration: underline;
+}
+
+.nav-toggle-items > div {
+    text-decoration: none;
+    color: #F7F9FA;
+    line-height: 0.5em;
+}
+.nav-toggle-items  div a{
+    text-decoration: none;
+    color: #F7F9FA;
+}
+
+.nav-toggle-items  div p{
+    line-height: 1em;
+}
+.item-text{
+    font-size: 1em;
+}
+
+.box-icon{
+    
+  width: 2.5em;
+  height: 2.5em; 
+}
+.backgroud-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.background--items{
+    text-align: center;
+    margin-top: 4em;
+}
+
+.bckgrnd--text{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3em;
+    font: 40px;
+}
+
+.signup--btn{
+    margin: auto;
+    background-color: #0070BA;
+    width: 60%;
+    border-radius: 30px;
+    height: 3.7em;
+    
+}
+
+.signup--btn:hover{
+    background-color: #0347c7;
+}
+
+.signup--btn > p{
+    padding: 0.94em;
+    font: 15px;
+    font-weight: 800;
+    font-family:  PayPalSansBig-Light, Helvetica Neue, Arial, sans-serif;
+
+}
+
+.business{
+    font: 20px;
+    font-weight: 400;
+    color: rgb(248, 252, 255);
+    color: transparent;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 1);
+    
+}
+
+.dull{
+
+    text-decoration: none;
+    font:18px;
+    font-weight: 900;
+    color: transparent;
+    text-shadow: 0 0 1px rgba(255, 255, 255, 1);
+    
+}
+
+.dull:hover{
+    text-decoration: underline;
+}
+/* Styling for 1st main content */
+.main--1{
+  text-align: center;
+  margin: 6.25em;
+}
+
+.sub-main{
+    font-size:3em;
+    font-family: 'Montserrat', sans-serif
+}
+.individuals{
+    font-size: 2rem;
+    font-family:  'Montserrat', sans-serif;
+}
+
+.sub-main--1-text{
+    font-size: 1rem;
+}
+
+.learnmore{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: 1px solid #0070BA;
+    color:#0070BA;
+    padding: 1.25em;
+    width:15em;
+    height:3rem;
+    border-radius: 20px;
+    margin: auto;
+}
+
+/* Styling for 2nd main content */
+
+.main2--2{
+    padding: 2.5em;
+}
+
+.main--2{
+    background-color: #F7F9FA;
+    text-align: center;
+}
+ .greaterthan{
+  opacity: 0.2;
+ }
+
+ .buyonline{
+     display: flex;
+     align-items: center;
+     justify-content: space-evenly;
+
+ }
+
+ .img-buy-1, .img-buy-2, .img-buy-3{
+     width: 33%;
+ }
+
+
+.display--text{
+    display: flex;
+    word-wrap: break-word;
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-left: auto;
+    background-color: #F7F9FA;
+    margin-bottom: 2em;
+}
+ 
+.display--text > p{
+    text-align: start;
+}
+ 
+
+ .round{
+    
+    border: 1px solid grey;
+    padding: 0.9375em 1.25em;
+    border-radius: 50%;
+    margin: 1.875m;
+    font-weight: bolder;
+    margin-right: 1.5em;
+    height: 3em;   
+}
+
+/* Styling for 3rd main content */
+
+.main--3{
+    background-color: #003087;
+    color:white;
+    
+}
+
+.main-3--container{
+    padding: 5em;
+    text-align: left;
+}
+
+.main--3--grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15em 15em;
+    word-wrap: break-word;
+  
+}
+.main--3--grid > div{
+    font-size: 14px;
+}
+.main--3--header{
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif
+}
+.main--3--head{
+    font-size: 28px;
+    font-family:  'Montserrat', sans-serif;
+}
+
+.main--3--bottom{
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+/* Styling for 4th main content */
+
+.main--4{
+    text-align: center;
+    background-color:#F7F9FA;
+}
+
+.main--4-container > p{
+    font-size: 1.8rem;
+    font-family:  'Montserrat', sans-serif;
+}
+.getstarted-btn{
+        margin: auto;
+        background-color: #0070BA;
+        width: 27%;
+        border-radius: 30px;
+        height: 3.7em;
+        color: white;
+        border: none;
+        font-size: 1rem;
+        font-weight:  bold;
+        margin-bottom: 3em;
+}
+
+/* Styling for footer */
+
+.footer-tab{
+    width: 90%;
+
+}
+.footer-tab1-contain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer--tab--1{
+    display: flex;
+}
+
+
+.footer--tab--1{
+    margin-right: 60%;
+}
+.footer-tab-2 , .footer-tab{
+    display:flex;
+}
+.footer-flag{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 1.5em;
+    height: 1.2em;
+
+}
+.foot{
+    display: flex;
+}
+.footer--tab--2, .footer--tab--1 li{
+    color: grey;
+    list-style : none;
+}
+.footer-tab2-contain{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer--tab--2{
+    display: flex;
+    justify-content: space-between;
+}
+li a{
+    text-decoration: none;
+    color: grey;
+    margin: 0.3125em;
+    white-space: nowrap;
+    font-size: 100%;
+}
+.footer--text{
+    display: flex;
+    justify-content: center;
+    color: #2e2c2f;
+    font-size: 0.8rem;
+    padding: 2.5em;
+    
+}
+
+.footer-icon{
+    width: 3em;
+    height: 3em;
+}
+.footer-icon-container{
+    display: flex;
+    justify-content: center;
+}
+.footer-copyright{
+    display: flex;
+    justify-content: center;
+    color: grey;
+
+}
+
+
+@media (min-width:599px){
+    .clone-nav-1{
+        display: none;
+
+    }
+    .sidebar.active{
+        display: none;
+    }
+    .sidebar.active ~ .main-body{
+        width: 100%;
+        left: 0;
+    }
+
+    
+}
+
+@media (max-width: 600px) {
+    .clone--nav{
+        display: none;
+    }
+    .nav-toggle-items{
+        display: none;
+    }
+
+    
+    .buyonline{
+        flex-direction: column;
+    }
+    
+    .img-buy-1, .img-buy-2, .img-buy-3{
+        width: 100%;
+        padding-bottom: 2em;
+    }
+    .img-buy-1, .img-buy-2{
+        border-bottom: 1px solid grey;
+    
+    }
+    .greaterthan{
+        display: none;
+    }
+    .main--3--grid{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-body{
+        transition: all 0.5s ease;
+        
+    }
+    .footer-tab-2{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            text-align: center;
+        
+    }
+    .footer--tab--2{
+        display: grid;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: auto auto;
+        gap: 1em;
+        margin-left: 0;
+        font-size:smaller;
+    }
+    .footer-tab{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: 1em;
+    }
+    .footer-flag{
+        margin-left: 53%;
+    }
+    .foot{
+        margin-left: 25%;
+        justify-content: space-between;
+    }
+    .foot li{
+        margin-right: 85%;
+    }
+
+    .footer--text{
+        font-size: smaller;
+    }
+    .footer--tab--1{
+       
+        font-size: smaller;
+    }
+    
+}
+
